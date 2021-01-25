@@ -1,0 +1,25 @@
+# SPRING BOOT PROPERTIES
+spring:
+
+  # IDENTITY (ContextIdApplicationContextInitializer)
+  application:
+    name: auth-manage
+
+  # PROFILES
+  profiles:
+    active: dev
+
+  # JMX
+  jmx:
+    enabled: false
+
+  # 优雅停机宽限期时间
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+
+# ----------------------------------------
+# WEB PROPERTIES
+# ----------------------------------------
+server:
+  port: 8080
+  shutdown: graceful
